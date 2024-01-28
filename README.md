@@ -16,5 +16,5 @@ The images in the folders of infected and not infected are divided into a ratio 
 zooming.
 
 ## VGG16-SVM
-We import the VGG 16 model from Keras and assign it with ImageNet weights. The segmented images are then fit on the model to extract features and then reshaped for the SVM classifier. SVM is imported from sklearn library. We’ve used SVM with linear kernel and soft margins and rbf kernel to classify our data. The features extracted from VGG16 go through the Chi-square
+The VGG 16 model is imported from Keras and assigned with ImageNet weights. The segmented images are then fit on the model to extract features and then reshaped for the SVM classifier. SVM is imported from sklearn library. SVM is used with linear kernel and soft margins and rbf kernel to classify our data. The features extracted from VGG16 go through the Chi-square
 test which determines the three best features to be used.
